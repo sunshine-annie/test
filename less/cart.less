@@ -1,0 +1,43 @@
+
+//头部区域
+
+#header{
+  background-image: url(../images/header-bg.png);
+  height: 40px;
+  line-height: 40px;
+  >.icon-back{
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px ;
+    background-position: -20px 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    padding: 10px;
+    //背景裁切，除了内容区域有背景别的地方都没有背景
+    background-clip: content-box;
+    //背景定位的原点，改成从content区域开始
+    background-origin: content-box;
+  }
+  >h3{
+    text-align: center;
+    font-weight: normal;
+  }
+  >.icon-menu{
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px ;
+    background-position: -60px 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    //背景裁切，除了内容区域有背景别的地方都没有背景
+    //    默认border-box
+    background-clip: content-box;
+    //背景定位的原点，改成从content区域开始
+    //    默认padding-box
+    background-origin: content-box;
+  }
+}
+

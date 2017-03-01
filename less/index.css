@@ -1,0 +1,147 @@
+#layout {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 1000px;
+  background-color: #f0f0f0;
+}
+#header {
+  position: fixed;
+  max-width: 640px;
+  min-width: 320px;
+  width: 100%;
+  z-index: 2;
+}
+#header > .icon-logo {
+  background-image: url(../images/sprites.png);
+  background-size: 200px 200px;
+  background-position: 0 -104px;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+#header > form {
+  padding-left: 70px;
+  padding-right: 50px;
+  padding-top: 5px;
+}
+#header > form > input {
+  height: 30px;
+  border-radius: 30px;
+  width: 100%;
+}
+#header > a.login {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #FFFFFF;
+}
+#slide > .swiper-container > .swiper-wrapper > .swiper-slide > img {
+  width: 100%;
+}
+#navs {
+  padding: 20px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+#navs > ul > li {
+  width: 25%;
+  float: left;
+}
+#navs > ul > li > a {
+  text-align: center;
+  display: block;
+}
+#navs > ul > li > a > img {
+  width: 60%;
+  margin-top: 5px;
+}
+#navs > ul > li > a > p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+#products {
+  background-color: #fff;
+  margin-top: 15px;
+  overflow: hidden;
+}
+#products > .seckill > .seckill-heading {
+  padding: 10px 0;
+  height: 40px;
+  line-height: 40px;
+}
+#products > .seckill > .seckill-heading > .seckill-icon {
+  width: 20px;
+  height: 25px;
+  float: left;
+  margin-top: 5px;
+}
+#products > .seckill > .seckill-heading > .seckill-name {
+  float: left;
+  font-size: 14px;
+  color: red;
+  margin-left: 5px;
+}
+#products > .seckill > .seckill-heading > .seckill-downtime {
+  float: left;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+#products > .seckill > .seckill-heading > .seckill-downtime > span {
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  float: left;
+  background-color: #000;
+  text-align: center;
+}
+#products > .seckill > .seckill-heading > .seckill-downtime > span:nth-child(3n) {
+  background-color: #fff;
+  color: #000;
+}
+#products > .seckill > .seckill-heading > .seckill-more {
+  float: right;
+  font-size: 14px;
+}
+#products > .seckill > .seckill-body {
+  padding-top: 10px;
+}
+#products > .seckill > .seckill-body > ul > li {
+  float: left;
+  width: 33.333%;
+}
+#products > .seckill > .seckill-body > ul > li > a {
+  display: block;
+  text-align: center;
+}
+#products > .seckill > .seckill-body > ul > li > a > img {
+  width: 60%;
+}
+#products > .seckill > .seckill-body > ul > li > a > p {
+  font-size: 12px;
+  color: #d8505c;
+}
+#products > .seckill > .seckill-body > ul > li > a > p:last-child {
+  color: #000;
+  text-decoration: line-through;
+}
+#products > .seckill > .seckill-body > ul > li + li {
+  border-left: 1px solid #cccccc;
+}
+#products > .product > .product-heading > h4 {
+  font-family: normal;
+}
+#products > .product > .product-heading > h4::before {
+  content: "";
+  width: 4px;
+  height: 15px;
+}
+#products > .product > .product-body > div > a {
+  display: block;
+}
+#products > .product > .product-body > div > a > img {
+  width: 100%;
+}

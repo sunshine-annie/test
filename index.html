@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet/less" href="less/base.less" />
+    <link rel="stylesheet/less" href="less/index.less" />
+    <script src="lib/less/less.js"></script>
+    <title>JD</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="lib/swiper/css/swiper.css">
+    <!-- Demo styles -->
+    <style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+    
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <!--主体布局容器-->
+    <div id="layout">
+        <!--网页头部-->
+        <header id="header">
+            <!--京东的logo精灵图-->
+            <i class="icon-logo"></i>
+            <form action="#">
+                <!--搜索图标，因为要相对搜索定位-->
+                <div class="search"></div>
+                <input type="text" />
+            </form>
+            <!--右侧登录-->
+            <a href="#" class="login">登录</a>
+        </header>
+        <!--轮播图-->
+        <section id="slide">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/l1.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l2.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l3.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l4.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l5.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l6.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l7.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="images/l8.jpg" alt="" /></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--网页导航-->
+        <nav id="navs">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/nav0.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav1.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav2.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav3.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav4.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/nav5.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/nav6.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/nav7.png" alt="" />
+                        <p>快下课了</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--网页主题商品部分-->
+        <main id="products">
+            <!--秒杀-->
+            <div class="seckill">
+                <div class="seckill-heading">
+                    <img src="images/seckill-icon.png" alt="" class="seckill-icon" />
+                    <div class="seckill-name">掌上秒杀</div>
+                    <div class="seckill-downtime">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <div class="seckill-more">
+                        >更多
+                    </div>
+                </div>
+                <div class="seckill-body">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/detail01.jpg" alt="" />
+                                <p>￥10：10</p>
+                                <p>￥10：10</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail01.jpg" alt="" />
+                                <p>￥10：10</p>
+                                <p>￥10：10</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail01.jpg" alt="" />
+                                <p>￥10：10</p>
+                                <p>￥10：10</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--普通商品-->
+            <div class="product">
+                <div class="product-heading">
+                    <h4>京东超市</h4>
+                </div>
+                <div class="product-body">
+                    <div class="pull-left w50">
+                        <a href="#" class="br">
+                            <img src="images/cp1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="pull-right w50">
+                        <a href="#" class="bb">
+                            <img src="images/cp2.jpg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="images/cp3.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--当前文件的JS文件-->
+    <script src="js/index.js"></script>
+    <!-- Swiper JS -->
+    <script src="lib/swiper/js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: 1000,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</body>
+
+</html>

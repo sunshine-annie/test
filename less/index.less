@@ -1,0 +1,191 @@
+
+//主体布局容器
+#layout{
+  max-width:640px;
+  min-width:320px;
+  margin: 0 auto;
+  height: 1000px;
+  background-color: #f0f0f0;
+}
+
+//网页头部
+#header{
+  position: fixed;
+  //因为100%相对body在PC端太大，需要限定宽度
+  max-width: 640px;
+  min-width: 320px;
+  width: 100%;
+  z-index: 2;
+  >.icon-logo{
+    background-image: url(../images/sprites.png);
+    //因为图片真实的像素放在页面上的大一倍，所以要缩小一倍插进来
+    background-size: 200px 200px;
+    background-position: 0 -104px;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+  }
+  >form{
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 5px;
+    >input{
+      height: 30px;
+      border-radius: 30px;
+      width: 100%;
+    }
+  }
+  >a.login{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #FFFFFF;
+  }
+}
+
+//轮播图
+#slide{
+  >.swiper-container{
+    >.swiper-wrapper{
+      >.swiper-slide{
+        >img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+//导航区域
+#navs{
+  padding: 20px 0;
+  background-color: #fff;
+  overflow: hidden;
+  >ul{
+    >li{
+      width: 25%;
+      float: left;
+      >a{
+        text-align: center;
+        display: block;
+        >img{
+          width: 60%;
+          margin-top: 5px;
+        }
+        >p{
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+//主题商品区域
+#products{
+  background-color: #fff;
+  margin-top: 15px;
+  overflow: hidden;
+  >.seckill{
+    >.seckill-heading{
+      padding: 10px 0;
+      height: 40px;
+      line-height: 40px;
+      >.seckill-icon{
+        width: 20px;
+        height: 25px;
+        float: left;
+        margin-top: 5px;
+      }
+      >.seckill-name {
+        float: left;
+        font-size: 14px;
+        color: red;
+        margin-left: 5px;
+      }
+      >.seckill-downtime{
+        float: left;
+        margin-left: 5px;
+        margin-top: 12px;
+        >span{
+          color: #fff;
+          width: 15px;
+          height: 15px;
+          line-height: 15px;
+          float: left;
+          background-color: #000;
+          text-align: center;
+          &:nth-child(3n){
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+      >.seckill-more{
+        float: right;
+        font-size: 14px;
+      }
+    }
+    >.seckill-body{
+      padding-top: 10px;
+      >ul{
+        >li{
+          float: left;
+          width: 33.333%;
+          >a{
+            display:block;
+            text-align: center;
+            >img{
+              width: 60%;
+            }
+            >p{
+              font-size: 12px;
+              color: #d8505c;
+              &:last-child{
+                color: #000;
+                text-decoration: line-through;
+              }
+            }
+          }
+          &+li{
+            border-left: 1px solid #cccccc;
+          }
+        }
+      }
+    }
+  }
+  >.product{
+    >.product-heading{
+      >h4{
+        font-family: normal;
+        &::before{
+          content: "";
+          width: 4px;
+          height: 15px;
+
+        }
+      }
+    }
+    >.product-body{
+      >div{
+        >a{
+          display: block;
+          >img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
